@@ -1,0 +1,98 @@
+<view class="top">
+    <view class="image_model"></view>
+    <view class="title">{{flockInfo.flockName}}</view>
+    <image class="image_model" src="../../picture/more.png" mode="aspectFill" bindtap="transport_to_viewinfo"></image>
+</view>
+<view class="main_body">
+    <scroll-view scroll-y="true" style="height: 100%;width: 100%;">
+        <block wx:for="{{messages}}" wx:for-index="sendpersonIdx" wx:for-item="sendpersonItem">
+            <block wx:if="{{sendpersonItem.person.id == currentUserId}}">
+                <block wx:if="{{sendpersonItem.wordNumber>26}}">
+                    <view class="message_mine_fulled">
+                        <view class="message_left_mine">
+                            <view id="{{sendpersonIdx}}" wx:if="{{sendpersonItem.person.sex=='男'}}" class="info_profile_boy" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                            <view wx:else id="{{sendpersonIdx}}" class="info_profile_girl" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                        </view>
+                        <view class="message_right">
+                            <view class="message_mainbody_mine">
+                                <view class="mainbody_text">{{sendpersonItem.content}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view class="message_mine_low">
+                        <view class="message_left_mine">
+                            <view id="{{sendpersonIdx}}" wx:if="{{sendpersonItem.person.sex=='男'}}" class="info_profile_1_boy" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                            <view wx:else id="{{sendpersonIdx}}" class="info_profile_1_girl" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                        </view>
+                        <view class="message_right">
+                            <view class="message_mainbody_mine">
+                                <view class="mainbody_text">{{sendpersonItem.content}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </block>
+            <block wx:else>
+                <block wx:if="{{sendpersonItem.wordNumber>26}}">
+                    <view class="message_fulled">
+                        <view class="message_left">
+                            <view id="{{sendpersonIdx}}" wx:if="{{sendpersonItem.person.sex=='男'}}" class="info_profile_boy" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                            <view id="{{sendpersonIdx}}" wx:else class="info_profile_girl" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                        </view>
+                        <view class="message_right">
+                            <view class="message_mainbody">
+                                <view class="mainbody_text">{{sendpersonItem.content}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view class="message_low">
+                        <view class="message_left">
+                            <view id="{{sendpersonIdx}}" wx:if="{{sendpersonItem.person.sex=='男'}}" class="info_profile_1_boy" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                            <view id="{{sendpersonIdx}}" wx:else class="info_profile_1_girl" bindtap="transport_to_viewotherinfo">
+                                <image class="userinfo-avatar" src="{{sendpersonItem.person.profile}}" mode="scaleToFill"></image>
+                            </view>
+                        </view>
+                        <view class="message_right">
+                            <view class="message_mainbody">
+                                <view class="mainbody_text">{{sendpersonItem.content}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </block>
+        </block>        
+    </scroll-view>
+</view>
+<view class="footer">
+    <view class="filled_space"></view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <textarea class="weui-textarea" value='{{userinput}}' placeholder="请输入想要发送的消息(不多于50个字)"
+                    style="height: 2.8em" maxlength="50" bindinput='bindWordLimit' />
+                <view class="weui-textarea-counter">{{inputlength}}/50</view>
+        </view>
+      </view>
+    </view>
+    <view class="button">
+      <view class="button-style" bindtap='sendmessage'>发送消息</view>
+    </view>
+</view>

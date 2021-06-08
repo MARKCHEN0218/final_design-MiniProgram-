@@ -1,0 +1,137 @@
+.top_title{
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48rpx;
+}
+.section{
+    width: 100%;
+    height: 100rpx;
+    /* border: 1px solid saddlebrown;
+    box-sizing: border-box; */
+    display: flex;
+    justify-content: space-around;
+}
+.section_left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 42rpx;
+}
+.section_Right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 42rpx;
+}
+.section_Right_number{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 42rpx;
+}
+.section_explanation{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 42rpx;
+}
+.split{
+    width: 100%;
+    height: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split_line{
+    width: 95%;
+    height: 30%;
+    background-color: gray;
+    border-radius: 10rpx;
+}
+.friend_model{
+    width: 100%;
+    height: 260rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+}
+.friend_model_mainbody{
+    width: 90%;
+    height: 80%;
+    padding-bottom: 15rpx;
+    border-radius: 10rpx;
+    display: flex;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 8rpx black;
+    box-sizing: border-box;
+}
+.mainbody_profile{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo-avatar-boy{
+    height: 140rpx;
+    width: 140rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8rpx solid #0988ef;
+    box-sizing: border-box;
+}
+.userinfo-avatar-girl{
+    height: 140rpx;
+    width: 140rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 8rpx solid rgb(255, 148, 237);
+    box-sizing: border-box;
+}
+.photo_style{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.main_body_remain{
+    display: flex;
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+.mainbody_filled{
+    width: 100%;
+    height: 20%;
+}
+.mainbody_info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainbody_info_username{
+    font-size: 36rpx;
+    color: gray;
+}
+.mainbody_info_position{
+    font-size: 28rpx;
+    color: gray;
+}

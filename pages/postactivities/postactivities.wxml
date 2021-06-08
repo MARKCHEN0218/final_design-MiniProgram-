@@ -1,0 +1,63 @@
+<view class="title">活动发布页</view>
+<view class="split">
+    <view class="split_line"></view>
+</view>
+<view class="section">
+    <view class="section__title">活动名：</view>
+    <input class="inputer" type="text" placeholder="请输入活动名" bindinput="getActivityName" placeholder-class="search_placeholder" maxlength="8"/>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">地点：</view>
+    <input class="inputer" type="text" placeholder="请输入地点" bindinput="getPosition" placeholder-class="search_placeholder" maxlength="30"/>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">类型：</view>
+    <picker class="picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view>
+        {{array[index]}}   >>
+      </view>
+    </picker>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">日期：</view>
+    <picker class="picker" mode="date" value="{{date}}" start="2020-01-01" end="2040-12-31" bindchange="bindDateChange">
+      <view>
+        {{date}}   >>
+      </view>
+    </picker>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">时间：</view>
+    <picker class="picker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+      <view>
+        {{time}}   >>
+      </view>
+    </picker>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">参与的人：</view>
+    <view class="section_button">
+        <view class="select_person_button" bindtap="transport_selectperson">
+            选择参与此次活动的人
+        </view>
+    </view>
+</view>
+<view class="post_button_section">
+    <view class="post_button" bindtap="postActivity">提交</view>
+</view>
+

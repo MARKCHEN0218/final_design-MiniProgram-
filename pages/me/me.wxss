@@ -1,0 +1,139 @@
+.user_info{
+    margin-top: 50rpx;
+    width: 100%;
+    height: 600rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo-avatar-boy {
+  margin-top: 5%;
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  border: 8rpx solid #0988ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo-avatar-girl {
+  margin-top: 5%;
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  border: 8rpx solid rgb(255, 148, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_info_main{
+    width: 90%;
+    height: 90%;
+    border-radius: 10rpx;
+    box-shadow: 0rpx 0rpx 20rpx black;
+    display: flex;
+    flex-direction: column;
+}
+.user_info_main_avatar{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_info_main_avatar_bottom{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo-avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.BigNickname{
+    width: 100%;
+    height: 55%;
+    /* border: 1px solid pink;
+    box-sizing: border-box; */
+    font-size: 48rpx;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.whole_briefinfo{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 32rpx;
+    color: gray;
+}
+.school_info{
+    height: 100%;
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.between_info{
+    height: 100%;
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.slideline{
+    width: 1%;
+    height: 70%;
+    background-color: gray;
+    border-radius: 10rpx;
+}
+.button_section{
+    width: 100%;
+    height: 750rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.button_section_1{
+    width: 100%;
+    height: 450rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.function_section{
+    width: 90%;
+    height: 105rpx;
+    border-radius: 10rpx;
+    box-shadow: 0rpx 0rpx 20rpx black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.funtion_text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 42rpx;
+}
+.funtion_image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 5%;
+}

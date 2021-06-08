@@ -1,0 +1,39 @@
+<view class="top_title">本聊天群信息</view>
+<view class="split">
+    <view class="split_line"></view>
+</view>
+<view class="section">
+    <view class="section_left">群名：</view>
+    <view class="section_Right">{{flockInfo.flockName}}</view>
+</view>
+<view class="split">
+    <view class="split_line"></view>
+</view>
+<view class="section">
+    <view class="section_left">群内人数：</view>
+    <view class="section_Right_number">{{flockInfo.employees.length}}人</view>
+    <view class="section_explanation">人员如下↓</view>
+</view>
+<block wx:for="{{flockInfo.employees}}" wx:for-index="flockPersonIndex" wx:for-item="flockPerson">
+    <view class="friend_model">
+        <view class="friend_model_mainbody">
+            <view class="mainbody_profile">
+                <view wx:if="{{flockPerson.sex =='女'}}" class="userinfo-avatar-girl">
+                    <image class="photo_style" src="{{flockPerson.profile}}" mode="scaleToFill"></image>
+                </view>
+                <view wx:else class="userinfo-avatar-boy">
+                    <image class="photo_style" src="{{flockPerson.profile}}" mode="scaleToFill"></image>
+                </view>
+            </view>
+            <view class="main_body_remain">
+                <view class="mainbody_filled"></view>
+                <view class="mainbody_info">
+                    <view class="mainbody_info_username">{{flockPerson.surname}}</view>
+                    <view class="mainbody_info_position">{{flockPerson.jobStatus}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+
+

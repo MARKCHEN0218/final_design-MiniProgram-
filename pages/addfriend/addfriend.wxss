@@ -1,0 +1,166 @@
+.search_section{
+    margin-top: 20rpx;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search_placeholder{
+    font-size: 36rpx;
+}
+.search_input{
+    width: 75%;
+}
+.search_explanation{
+    font-size: 36rpx;
+}
+.image_scale{
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 1%;
+}
+.search_section_mainpart{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    border-radius: 5rpx;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+.search_middle{
+    margin-top: 40rpx;
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.search_middle_top{
+    margin-left: 3%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    font-size: 48rpx;
+    align-items: center;
+}
+.search_middle_bottom{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split_line{
+    width: 95%;
+    height: 50%;
+    background-color: gray;
+    border-radius: 10rpx;
+}
+.friend_model{
+    width: 100%;
+    height: 260rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rpx;
+}
+.friend_model_mainbody{
+    width: 90%;
+    height: 80%;
+    padding-bottom: 15rpx;
+    border-radius: 10rpx;
+    display: flex;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 8rpx black;
+    box-sizing: border-box;
+}
+.mainbody_profile{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo-avatar-boy{
+    height: 140rpx;
+    width: 140rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5rpx solid #0988ef;
+    box-sizing: border-box;
+}
+.userinfo-avatar-girl{
+    height: 140rpx;
+    width: 140rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5rpx solid rgb(255, 148, 237);
+    box-sizing: border-box;
+}
+.image-scale{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.main_body_remain{
+    display: flex;
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+.mainbody_filled{
+    width: 100%;
+    height: 20%;
+}
+.mainbody_info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainbody_info_username{
+    font-size: 36rpx;
+    color: gray;
+}
+.mainbody_info_position{
+    font-size: 28rpx;
+    color: gray;
+}
+.mainbody_addfriend_section{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.addfriend_button{
+    margin-right: 10%;
+    width: 30%;
+    height: 100%;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    border-radius: 5rpx;
+}
+.null_search_section{
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48rpx;
+    color: gray;
+}

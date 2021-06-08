@@ -1,0 +1,16 @@
+<block wx:for="{{remainUnaccepteddata}}" wx:for-index="UnacceptedActivityIndex" wx:for-item="UnacceptedActivity">
+    <view class="activity_model">
+        <view class="activity_model_mainbody">
+            <view class="activity_name">{{UnacceptedActivity.activity.activityName}}</view>
+            <view class="activity_allinfo">
+                <view class="activity_maininfo">地点：{{UnacceptedActivity.activity.location}}</view>
+                <view class="activity_maininfo">参与人数：{{UnacceptedActivity.activity.pnumber}}人</view>
+                <view class="activity_maininfo">时间：{{UnacceptedActivity.activity.createTime}}</view>
+            </view>
+            <view class="activity_button_section">
+                <view class="activity_button_confirm" id="{{UnacceptedActivityIndex}}" bindtap="acceptThisActivity">参加</view>
+                <view class="activity_button_cancel" id="{{UnacceptedActivityIndex}}" bindtap="rejectThisActivity">不参加</view>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,145 @@
+.main_top{
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.main_top_left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.top_nickname{
+    height: 100%;
+    font-size: 42rpx;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.top_welcome{
+    margin-left: 2%;
+    height: 100%;
+    font-size: 24rpx;
+    display: flex;
+    color: gray;
+    flex-direction: column-reverse;
+    font-weight: bold;
+}
+.main_top_middle{
+    width: 18%;
+    height: 85%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    font-size: 30rpx;
+    color: gray;
+}
+.main_top_right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.icon_size{
+    width: 64rpx;
+    height: 42rpx;
+}
+.icon_size_1{
+    width: 52rpx;
+    height: 52rpx;
+}
+.split_line{
+    width: 100%;
+    height: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split_line_1{
+    width: 95%;
+    height: 20%;
+    background-color: gray;
+    border-radius: 5rpx;
+    box-shadow: 0px 0px 10rpx whitesmoke;
+}
+.fill_white{
+    width: 100%;
+    height: 40rpx;
+}
+.flock_model{
+    margin-top: 40rpx;
+    width: 100%;
+    height: 150rpx;
+    border: 1rpx solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+.flock_pic{
+    width: 128rpx;
+    height: 128rpx;
+}
+.flock_model_left{
+    margin-left: 5%;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.flock_info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flock_model_right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flock_name{
+    width: 100%;
+    height: 60%;
+    font-size: 45rpx;
+    display: flex;
+    align-items: center;
+}
+.flock_pnumber{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: flex-start;
+}
+.flock_pnumber_style{
+    font-size: 32rpx;
+    color: gray;
+    margin-left: 10%;
+}
+.last_update_time_yearmonth{
+    width: 100%;
+    height: 30%;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.last_update_time_time{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: gray;
+    font-size: 28rpx;
+}

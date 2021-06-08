@@ -1,0 +1,5 @@
+<view wx:for="{{array}}">
+  <view bindtap="test">
+    <view id="{{index}}">{{index}}:{{item}}</view>
+  </view>
+</view>

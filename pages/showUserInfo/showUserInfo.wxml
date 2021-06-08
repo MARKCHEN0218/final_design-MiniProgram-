@@ -1,0 +1,44 @@
+<view class="user_info">
+    <view class="user_info_main">
+        <view class="user_info_main_avatar">
+            <view class="{{userinfo_avatar}}">
+                <image class="userinfo-avatar" src="{{userAvatarUrl}}"></image>
+            </view>
+        </view>
+        <view class="user_info_main_avatar_bottom">
+            <view class="BigNickname">{{username}}</view>
+            <view class="whole_briefinfo">
+                <view style="width: 5%;"></view>
+                <view class="between_info">性别：{{usersex}}</view>
+                <view class="school_info">职务：{{userposition}}</view>
+                <view style="width: 3%;"></view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="section">
+    <view class="section_filled"></view>
+    <image class="image_model" src="../../picture/ID.png" mode="aspectFill"></image>
+    <view class="section_label">工号：</view>
+    <view class="section_text">{{workId}}</view>
+</view>
+<view class="section">
+    <view class="section_filled"></view>
+    <image class="image_model" src="../../picture/email.png" mode="aspectFill"></image>
+    <view class="section_label">邮箱：</view>
+    <view class="section_text">{{emailAddress}}</view>
+</view>
+<view class="section">
+    <view class="section_filled"></view>
+    <image class="image_model" src="../../picture/phone.png" mode="aspectFill"></image>
+    <view class="section_label">电话：</view>
+    <view class="section_text">{{teleNumber}}</view>
+</view>
+<block wx:if="{{!whetherMyfriend}}">
+    <view class="addfriend_section">
+        <view class="addfriend_mainbody">
+            <image class="addfriend_version" src="../../picture/addthisfriend.png" mode="aspectFill"></image>
+            <view class="addfriend_text" bindtap="addfriend">添加好友</view>
+        </view>
+    </view>
+</block>

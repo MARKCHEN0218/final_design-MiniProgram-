@@ -1,0 +1,26 @@
+<view class="main-page" wx:for="{{unauthorizedPerson}}" wx:for-index="personindex" wx:for-item="person">
+    <view class="friend_model">
+        <view class="friend_model_mainbody">
+            <view class="mainbody_profile">
+                <view wx:if="{{person.sex == '女'}}" class="userinfo-avatar-girl">
+                    <image class="photo_style" src="{{person.profile}}" mode="scaleToFill"></image>
+                </view>
+                <view wx:else class="userinfo-avatar-boy">
+                    <image class="photo_style" src="{{person.profile}}" mode="scaleToFill"></image>
+                </view>
+            </view>
+            <view class="main_body_remain">
+                <view class="mainbody_filled"></view>
+                <view class="mainbody_info">
+                    <view class="mainbody_info_username">{{person.surname}}</view>
+                    <view class="mainbody_info_position">{{person.jobStatus}}</view>
+                </view>
+                <view class="mainbody_button">
+                    <view class="mainbody_mini_filled"></view>
+                    <view class="mainbody_button_confirm" id="{{personindex}}" bindtap="accept">授权</view>
+                    <view class="mainbody_button_cancel" id="{{personindex}}" bindtap="reject">拒绝</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

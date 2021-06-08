@@ -1,0 +1,36 @@
+<scroll-view scroll-y="true" style="width: 100%;height: 1050rpx;">
+    <block wx:for="{{yourFriends}}" wx:for-index="friendindex" wx:for-item="friendperson">
+        <view class="friend_model">
+            <view class="friend_model_mainbody">
+                <view class="mainbody_profile">
+                    <view wx:if="{{friendperson.employees.sex == '女'}}" class="userinfo-avatar-girl">
+                        <image class="photo_style" src="{{friendperson.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                    <view wx:else class="userinfo-avatar-boy">
+                        <image class="photo_style" src="{{friendperson.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                </view>
+                <view class="main_body_remain">
+                    <view class="mainbody_filled"></view>
+                    <view class="mainbody_info">
+                        <view class="mainbody_info_username">{{friendperson.employees.surname}}</view>
+                        <view class="mainbody_info_position">{{friendperson.employees.jobStatus}}</view>
+                    </view>
+                    <view class="mainbody_selected">
+                        <view class="button_section" id="{{friendindex}}" bindtap="changeSelect">
+                            <view class="selected_image" wx:if="{{clickedArray[friendindex]==1}}">
+                                <image class="selected_image_fashion" src="../../picture/selected.png" mode="aspectFill"></image>
+                            </view>
+                            <view wx:else class="selected_image"></view>
+                            <view class="selected_text">选择此人</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+<view class="confirm_section">
+    <view class="confirm_button" bindtap="confirmPost">确定</view>
+</view>        
+

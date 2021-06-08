@@ -1,0 +1,39 @@
+<view class="search_section">
+    <view class="search_section_mainpart">
+        <view class="search_explanation">工号：</view>
+        <input class="search_input" type="number" placeholder="请输入所要查询人的工号" placeholder-class="search_placeholder" maxlength="10" bindinput="getSearchNumber"/>
+    </view>
+    <image bindtap="postSearchNumber" class="image_scale" src="../../picture/search.png" mode="scaleToFill"/>
+</view>
+<block wx:if="{{whetherShow}}">
+    <view class="search_middle">
+        <view class="search_middle_top">搜索结果：</view>
+        <view class="search_middle_bottom">
+            <view class="split_line"></view>
+        </view>
+    </view>
+    <view wx:if="{{whetherExist}}">
+        <view class="friend_model">
+            <view class="friend_model_mainbody">
+                <view class="mainbody_profile">
+                    <view class="{{userinfo_profile}}">
+                        <image class="image-scale" src="{{searchPerson.profile}}" mode="scaleToFill"></image>
+                    </view>
+                </view>
+                <view class="main_body_remain">
+                    <view class="mainbody_filled"></view>
+                    <view class="mainbody_info">
+                        <view class="mainbody_info_username">{{searchPerson.surname}}</view>
+                        <view class="mainbody_info_position">{{searchPerson.jobStatus}}</view>
+                    </view>
+                    <view class="mainbody_addfriend_section">
+                        <view class="addfriend_button" wx:if="{{whetherExistButton}}" bindtap="addFriend">添加好友</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        <view class="null_search_section">无查询对应结果，请重新输入</view>
+    </view>
+</block>

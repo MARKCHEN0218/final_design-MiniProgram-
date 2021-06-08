@@ -1,0 +1,71 @@
+<block wx:if="{{PageId == 0}}">
+    <view class="main_top">
+        <view class="main_top_left">
+          <view class="{{userinfo_profile}}">
+            <image class="userinfo-avatar" src="{{user_profile}}" mode="scaleToFill"></image>
+          </view>
+          <view class="main_top_userinfo">
+            <view class="main_top_userinfo_username">{{user_name}}</view>
+            <view class="main_top_userinfo_position">职务:{{user_position}}</view>
+          </view>
+        </view>
+        <view class="main_top_right">
+          <view class="last_update_time_yearmonth">{{year}}年{{month}}月{{day}}日</view>
+          <view class="last_update_time_time">{{hour}}:{{minute}}</view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class="main_top">
+        <view class="main_top_left">
+          <view class="{{userinfo_profile}}">
+            <image class="userinfo-avatar" src="{{search_profile}}" mode="scaleToFill"></image>
+          </view>
+          <view class="main_top_userinfo">
+            <view class="main_top_userinfo_username">{{search_name}}</view>
+            <view class="main_top_userinfo_position">职务:{{search_position}}</view>
+          </view>
+        </view>
+        <view class="main_top_right">
+          <view class="last_update_time_yearmonth">{{year}}年{{month}}月{{day}}日</view>
+          <view class="last_update_time_time">{{hour}}:{{minute}}</view>
+        </view>
+    </view>
+</block>
+<view class="split">
+    <view class="split_line"></view>
+</view>
+<view class="search_result">
+    <view class="search_result_top">
+        <view class="search_result_title">搜索结果为：</view>
+        <view class="split">
+            <view class="split_line"></view>
+        </view>
+    </view>
+    <view class="icon_collection">
+        <view class="icon_pattern">
+            <view class="icon_main_body">
+                <view class="icon_title">正常</view>
+                <image class="icon_size" src="../../picture/correct.png" mode="aspectFill"></image>
+                <view class="icon_text">{{normalTimes}}次</view>
+            </view>
+        </view>
+        <view class="icon_pattern">
+            <view class="icon_main_body">
+                <view class="icon_title">迟到</view>
+                <image class="icon_size" src="../../picture/late.png" mode="aspectFill"></image>
+                <view class="icon_text">{{lateTimes}}次</view>
+            </view>
+        </view>
+        <view class="icon_pattern">
+            <view class="icon_main_body">
+                <view class="icon_title">请假</view>
+                <image class="icon_size" src="../../picture/leave.png" mode="aspectFill"></image>
+                <view class="icon_text">{{outTimes}}次</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="swith_to_attendance_button">
+    <view class="attendance_button" bindtap="swith_to_attendance">确定</view>
+</view>

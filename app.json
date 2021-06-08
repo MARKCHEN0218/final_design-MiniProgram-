@@ -1,0 +1,61 @@
+{
+  "pages": [    
+    "pages/login/login",
+    "pages/postactivities/postactivities",
+    "pages/managefriends/managefriends",
+    "pages/authority/authority",
+    "pages/index/index",
+    "pages/showAttendanceInfo/showAttendanceInfo",
+    "pages/addfriend/addfriend",
+    "pages/test/test",
+    "pages/selectperson/selectperson",
+    "pages/addchating/addchating",
+    "pages/chating/chating",
+    "pages/attendenceOtherPerson/attendenceOtherPerson",
+    "pages/me/me",
+    "pages/showUserInfo/showUserInfo",
+    "pages/viewFlockInfo/viewFlockInfo",
+    "pages/attendance/attendance",
+    "pages/manageactivities/manageactivities",
+    "pages/affair/affair",
+    "pages/register/register"   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0988ef",
+    "navigationBarTitleText": "RestManage",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#e6e6e6",
+    "selectedColor":"#6dc6de",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "picture/index(unselected).png",
+        "selectedIconPath": "picture/index(selected).png"
+      },
+      {
+        "pagePath": "pages/affair/affair",
+        "text": "事件",
+        "iconPath": "picture/sell_book(unselected).png",
+        "selectedIconPath": "picture/sell_book(selected).png"
+      },      
+      {
+        "pagePath": "pages/attendance/attendance",
+        "text": "考勤",
+        "iconPath": "picture/order(unselected).png",
+        "selectedIconPath": "picture/order(selected).png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我der",
+        "iconPath": "picture/user(unselected).png",
+        "selectedIconPath": "picture/user(selected).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

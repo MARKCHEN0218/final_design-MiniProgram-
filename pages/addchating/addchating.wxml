@@ -1,0 +1,37 @@
+<view class="main_top">
+    <view class="main_top_left">
+      <view class="{{userinfo_profile}}">
+        <image class="userinfo-avatar" src="{{user_profile}}" mode="scaleToFill"></image>
+      </view>
+      <view class="main_top_userinfo">
+        <view class="main_top_userinfo_username">{{user_name}}</view>
+        <view class="main_top_userinfo_position">职务:{{user_position}}</view>
+      </view>
+    </view>
+    <view class="main_top_right">
+      <view class="last_update_time_yearmonth">{{year}}年{{month}}月{{day}}日</view>
+      <view class="last_update_time_time">{{hour}}:{{minute}}</view>
+    </view>
+  </view>
+<view class="title">新建群聊页</view>
+<view class="split">
+    <view class="split_line"></view>
+</view>
+<view class="section">
+    <view class="section__title">群名：</view>
+    <input class="inputer" type="text" placeholder="请输入群名" placeholder-class="search_placeholder" maxlength="8"  bindinput="getFlockName"/>
+</view>
+<view class="split">
+    <view class="split_line_one"></view>
+</view>
+<view class="section">
+    <view class="section__title">加群的人：</view>
+    <view class="section_button">
+        <view class="select_person_button" bindtap="transport_selectperson">
+            选择加入此群的人
+        </view>
+    </view>
+</view>
+<view class="post_button_section">
+    <view class="post_button" bindtap="postFlockInfo">确定</view>
+</view>

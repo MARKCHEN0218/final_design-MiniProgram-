@@ -1,0 +1,174 @@
+.main_top{
+    margin-top: 10rpx;
+    width: 100%;
+    height: 160rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_top_left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.userinfo-avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.userinfo-avatar-boy{
+    width: 128rpx;
+    height: 128rpx;
+    border: 8rpx solid #0988ef;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.userinfo-avatar-girl{
+    width: 128rpx;
+    height: 128rpx;
+    border: 8rpx solid rgb(255, 148, 237);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.main_top_userinfo{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main_top_userinfo_username{
+    width: 100%;
+    height: 55%;
+    font-size: 42rpx;
+    display: flex;
+    align-items: center;
+}
+.main_top_userinfo_position{
+    width: 100%;
+    height: 35%;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.main_top_right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.last_update_time_yearmonth{
+    width: 100%;
+    height: 30%;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.last_update_time_time{
+    width: 80%;
+    height: 30%;
+    display: flex;
+   justify-content: center;
+    color: gray;
+    font-size: 36rpx;
+}
+.title{
+    margin-top: 35rpx;
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48rpx;
+}
+.split{
+    width: 100%;
+    height: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split_line{
+    width: 95%;
+    height: 42%;
+    border-radius: 10rpx;
+    background-color: gray;
+}
+.split_line_one{
+    width: 95%;
+    height: 20%;
+    border-radius: 10rpx;
+    background-color: gray;
+}
+.section{
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section__title{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 42rpx;
+}
+.inputer{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 42rpx;
+}
+.section_button{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.select_person_button{
+    width: 85%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0988ef;
+    font-size: 34rpx;
+    border-radius: 10rpx;
+}
+.post_button_section{
+    margin-top: 50rpx;
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_button{
+    width: 80%;
+    height: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    font-size: 48rpx;
+}

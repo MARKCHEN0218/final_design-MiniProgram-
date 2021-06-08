@@ -1,0 +1,33 @@
+<view class="top">查询员工考勤信息</view>
+<view class="middle">
+    <view class="main_body">
+        <view class="search_id">
+            <view class="search_model_title">工号:</view>
+            <input class="search_input" type="number" placeholder="请输入所要查询人的工号" placeholder-class="search_placeholder"
+                maxlength="10" bindinput="getSearchNumber"/>
+        </view>
+        <view class="split"></view>
+        <view class="section">
+            <view class="section__title">起始日期：</view>
+            <picker class="picker" mode="date" value="{{date}}" start="2020-01-01" end="2040-12-31"
+                bindchange="bindDateChange">
+                <view>
+                    {{date}} >>
+                </view>
+            </picker>
+        </view>
+        <view class="split"></view>
+        <view class="section">
+            <view class="section__title">结束日期：</view>
+            <picker class="picker" mode="date" value="{{date1}}" start="2020-01-01" end="2040-12-31"
+                bindchange="bindDateChange1">
+                <view>
+                    {{date1}} >>
+                </view>
+            </picker>
+        </view>
+    </view>
+</view>
+<view class="search_button_section">
+    <view class="search_button" bindtap="searchOtherPerson">查询</view>
+</view>

@@ -1,0 +1,105 @@
+<view class="main_top">
+  <view class="main_top_left">
+    <view class="{{userinfo_profile}}">
+      <image class="userinfo-avatar" src="{{user_profile}}" mode="scaleToFill"></image>
+    </view>
+    <view class="main_top_userinfo">
+      <view class="main_top_userinfo_username">{{user_name}}</view>
+      <view class="main_top_userinfo_position">职务:{{user_position}}</view>
+    </view>
+  </view>
+  <view class="main_top_right">
+    <view class="last_update_time_yearmonth">{{year}}年{{month}}月{{day}}日</view>
+    <view class="last_update_time_time">{{hour}}:{{minute}}</view>
+  </view>
+</view>
+<view class="split_line">
+  <view class="split_line_1"></view>
+</view>
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}"
+            bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider"
+          style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);">
+        </view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="main-tap" hidden="{{activeIndex != 0}}">
+          <view class="attendence_main_page">
+            <view class="attendence_main_page_title">
+              <image class="attendence_pic" src="../../picture/attendance.png" mode="scaleToFill"></image>
+              <view class="attendence_text">上班打卡</view>
+              <view class="attendece_filled"></view>
+            </view>
+            <view class="attendence_main_button_section">
+              <view class="attendence_main_button" bindtap="postattendance">上班打卡</view>
+            </view>
+            <view class="check_button">
+              <block wx:if="{{!whetherChecked}}">
+                <view class="check_button_mainbody" bindtap="getposition">检查位置</view>
+              </block>
+              <block wx:else>
+                <view class="connectsuccess">已连接公司网络：{{wifiName}}</view>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="main-tap" hidden="{{activeIndex != 1}}">
+          <view class="attendence_main_page">
+            <view class="attendence_main_page_title">
+              <image class="attendence_pic" src="../../picture/attendance.png" mode="scaleToFill"></image>
+              <view class="attendence_text">请假报备:</view>
+              <view class="attendece_filled"></view>
+            </view>
+            <view class="weui-cells__title">请说明原因：</view>
+            <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell">
+                <view class="weui-cell__bd">
+                  <textarea class="weui-textarea" value='{{userinput}}' placeholder="请输入请假原因(不多于100个字)"
+                    style="height: 6.5em" maxlength="100" bindinput='bindWordLimit'/>
+                  <view class="weui-textarea-counter">{{input_length}}/100</view>
+                </view>
+              </view>
+            </view>
+            <view class="check_button_additional">
+                <view class="check_button_mainbody" bindtap="postLeaveRequest">提交情况</view>
+            </view>
+          </view>
+          </view>
+          <view class="main-tap" hidden="{{activeIndex != 2}}">
+            <view class="select_section">
+              <view class="select_section_main">
+                <view class="section">
+                  <view class="section__title">起始日期：</view>
+                  <picker class="picker" mode="date" value="{{date}}" start="2019-01-01" end="2040-12-31" bindchange="bindDateChange">
+                    <view>
+                      {{date}}   >>
+                    </view>
+                  </picker>
+                </view>
+                <view class="split_line"></view>
+                <view class="section">
+                  <view class="section__title">结束日期：</view>
+                  <picker class="picker" mode="date" value="{{date1}}" start="2019-01-01" end="2040-12-31" bindchange="bindDateChange1">
+                    <view>
+                      {{date1}}   >>
+                    </view>
+                  </picker>
+                </view>
+              </view>
+            </view>
+            <view class="search_button_section">
+              <view class="search_button" bindtap="transport_viewAttendenceInfo">查询</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

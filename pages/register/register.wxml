@@ -1,0 +1,22 @@
+<view style='margin-top:5%'></view>
+<view class="middle-onemode">
+  <i-input class="input-style" value="{{Username}}" title="用户名：" placeholder='请输入用户名：' bind:change="getUsername" />
+</view>
+<view class="middle-onemode">
+  <i-input class="input-style" value="{{Sex}}" title="性别：" placeholder='请输入性别：' bind:change="getSex" />
+</view>
+<view class="middle-onemode">
+  <i-input class="input-style" value="{{Email}}" title="邮箱：" placeholder="请输入邮箱" bind:change="getEmail" />
+</view>
+<view class="middle-onemode">
+  <i-input class="input-style" value="{{Position}}" title="公司职务：" placeholder="请输入您的公司职务" bind:change="getPosition" />
+</view>
+<view class="middle-onemode">
+  <i-input class="input-style" value="{{Telephone}}" title="联系方式：" placeholder="请输入联系方式" bind:change="getTelephone" />
+</view>
+<view class="middle-onemode-1">
+  <i-input class="input-style-1" value="{{Password}}" type='password' title="密码：" placeholder="请填写密码，不多于16个字符" maxlength="16" bind:change="getPassword" />
+</view>
+<view class="footer">
+  <view class="button-style" bindtap="comfirm_info">确定</view>
+</view>

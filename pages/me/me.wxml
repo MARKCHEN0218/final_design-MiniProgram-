@@ -1,0 +1,59 @@
+<view class="user_info">
+    <view class="user_info_main">
+        <view class="user_info_main_avatar">
+            <view class="{{userinfo_avatar}}">
+                <image class="userinfo-avatar" src="{{user_avatar_url}}" mode="scaleToFill"></image>
+            </view>
+        </view>
+        <view class="user_info_main_avatar_bottom">
+            <view class="BigNickname">{{username}}</view>
+            <view class="whole_briefinfo">
+                <view class="between_info">工号：{{userId}}</view>
+                <view class="slideline"></view>
+                <view class="school_info">职务：{{userposition}}</view>
+                <view class="slideline"></view>
+                <view class="between_info">性别：{{usersex}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{whethershow}}">
+    <view class="button_section">
+        <view class="function_section" bindtap="tranport_managefriends">
+            <view class="funtion_text">朋友管理</view>
+            <image class="funtion_image" src="../../picture/managefriend.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section" bindtap="tranport_manageactivity">
+            <view class="funtion_text">事件管理</view>
+            <image class="funtion_image" src="../../picture/manageactivity.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section" bindtap="tranport_manageregister">
+            <view class="funtion_text">授权批准</view>
+            <image class="funtion_image" src="../../picture/manageregister.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section" bindtap="tranport_postactivity">
+            <view class="funtion_text">事件发布</view>
+            <image class="funtion_image" src="../../picture/postactivity.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section" bindtap="tranport_attendenceOtherPerson">
+            <view class="funtion_text">考勤查询</view>
+            <image class="funtion_image" src="../../picture/searchAttendce.png" mode="scaleToFill"></image>
+        </view>
+    </view>
+</view>
+<view wx:else>
+    <view class="button_section_1">
+        <view class="function_section" bindtap="tranport_managefriends">
+            <view class="funtion_text">朋友管理</view>
+            <image class="funtion_image" src="../../picture/managefriend.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section" bindtap="tranport_manageactivity">
+            <view class="funtion_text">事件管理</view>
+            <image class="funtion_image" src="../../picture/manageactivity.png" mode="scaleToFill"></image>
+        </view>
+        <view class="function_section"  bindtap="tranport_postactivity">
+            <view class="funtion_text">事件发布</view>
+            <image class="funtion_image" src="../../picture/postactivity.png" mode="scaleToFill"></image>
+        </view>
+    </view>
+</view>

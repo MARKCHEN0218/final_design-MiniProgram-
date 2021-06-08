@@ -1,0 +1,43 @@
+<view class="main_top">
+    <view class="main_top_left">
+        <view class="top_nickname">{{nickname}}</view>
+        <view class="top_welcome">{{welcome_text}}</view>
+    </view>
+    <view class="main_top_middle">{{month}}月{{day}}日</view>
+    <view class="main_top_right">
+        <image class="icon_size" bindtap="transport_to_addchating" src="../../picture/addflock.png" mode="scaleToFill"></image>
+        <image class="icon_size_1" bindtap="transport_to_addfriend" src="../../picture/addfriend.png" mode="scaleToFill"></image>
+    </view>
+</view>
+<view class="split_line">
+    <view class="split_line_1"></view>
+</view>
+<block wx:for="{{flocks}}" wx:for-index="flockindex" wx:for-item="flockbody">
+    <view wx:if="{{flockbody.category == 'multiperson'}}">
+        <view class="flock_model" bindtap="transport_chatting" id="{{flockindex}}">
+            <view class="flock_model_left">
+                <image class="flock_pic" src="../../picture/multperson.png" mode="scaleToFill"></image>
+                <view class="flock_info">
+                    <view class="flock_name">{{flockbody.flockName}}</view>
+                    <view class="flock_pnumber">
+                        <view class="flock_pnumber_style">{{flockbody.employees.length}}人</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        <view class="flock_model" bindtap="transport_chatting" id="{{flockindex}}">
+            <view class="flock_model_left">
+                <image class="flock_pic" src="../../picture/personal.png" mode="scaleToFill"></image>
+                <view class="flock_info">
+                    <view class="flock_name">{{flockbody.flockName}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+
+
+
+

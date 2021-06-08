@@ -1,0 +1,158 @@
+@import "../../dist/weui.wxss";
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+    padding: 40px;
+}
+.page__bd {
+    padding-bottom: 40px;
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+.main-tap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.friend_model{
+    width: 100%;
+    height: 260rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rpx;
+}
+.friend_model_mainbody{
+    width: 90%;
+    height: 80%;
+    padding-bottom: 15rpx;
+    border-radius: 10rpx;
+    display: flex;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 8rpx black;
+    box-sizing: border-box;
+}
+.mainbody_profile{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userinfo-avatar-boy{
+    height: 140rpx;
+    width: 140rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8rpx solid #0988ef;
+    box-sizing: border-box;
+}
+.userinfo-avatar-girl{
+    height: 140rpx;
+    width: 140rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 8rpx solid rgb(255, 148, 237);
+    box-sizing: border-box;
+}
+.photo_style{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.main_body_remain{
+    display: flex;
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+.mainbody_filled{
+    width: 100%;
+    height: 20%;
+}
+.mainbody_info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainbody_info_username{
+    font-size: 36rpx;
+    color: gray;
+}
+.mainbody_info_position{
+    font-size: 28rpx;
+    color: gray;
+}
+.mainbody_button{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainbody_mini_filled{
+    width: 22%;
+    height: 100%;
+}
+.mainbody_button_confirm{
+    width: 28%;
+    height: 100%;
+    border-radius: 5rpx;
+    background-color: green;
+    color: white;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbody_button_cancel{
+    width: 28%;
+    height: 100%;
+    border-radius: 5rpx;
+    background-color: rgb(185, 185, 185);
+    color: white;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

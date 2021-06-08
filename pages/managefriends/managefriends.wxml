@@ -1,0 +1,67 @@
+<view class="page">
+    <view class="page__bd">
+      <view class="weui-tab">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel">
+          <view class="main-tap" hidden="{{activeIndex != 0}}">
+            <block wx:for="{{remainingUnacceptedFriend}}" wx:for-index="remainingIndex" wx:for-item="UnacceptedFriend">
+              <view class="friend_model">
+                <view class="friend_model_mainbody">
+                  <view class="mainbody_profile">
+                    <view wx:if="{{UnacceptedFriend.employees.sex == '女'}}" class="userinfo-avatar-girl">
+                        <image class="photo_style" src="{{UnacceptedFriend.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                    <view wx:else class="userinfo-avatar-boy">
+                        <image class="photo_style" src="{{UnacceptedFriend.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                  </view>
+                  <view class="main_body_remain">
+                        <view class="mainbody_filled"></view>
+                        <view class="mainbody_info">
+                            <view class="mainbody_info_username">{{UnacceptedFriend.employees.surname}}</view>
+                            <view class="mainbody_info_position">{{UnacceptedFriend.employees.jobStatus}}</view>
+                        </view>
+                        <view class="mainbody_button">
+                            <view class="mainbody_mini_filled"></view>
+                            <view class="mainbody_button_confirm" id="{{remainingIndex}}" bindtap="addthisperson">添加</view>
+                            <view class="mainbody_button_cancel" id="{{remainingIndex}}" bindtap="rejectthisperson">拒绝</view>
+                        </view>
+                    </view>
+                </view>
+              </view>
+            </block>
+          </view>
+          <view class="main-tap" hidden="{{activeIndex != 1}}">
+            <block wx:for="{{acceptedFriend}}" wx:for-index="acceptedIndex" wx:for-item="acceptedFriend">
+              <view class="friend_model">
+                <view class="friend_model_mainbody">
+                    <view class="mainbody_profile">
+                      <view wx:if="{{acceptedFriend.employees.sex == '女'}}" class="userinfo-avatar-girl">
+                        <image class="photo_style" src="{{acceptedFriend.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                    <view wx:else class="userinfo-avatar-boy">
+                        <image class="photo_style" src="{{acceptedFriend.employees.profile}}" mode="scaleToFill"></image>
+                    </view>
+                   </view>
+                    <view class="main_body_remain">
+                        <view class="mainbody_filled"></view>
+                        <view class="mainbody_info">
+                            <view class="mainbody_info_username">{{acceptedFriend.employees.surname}}</view>
+                            <view class="mainbody_info_position">{{acceptedFriend.employees.jobStatus}}</view>
+                        </view>
+                    </view>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

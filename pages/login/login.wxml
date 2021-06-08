@@ -1,0 +1,22 @@
+<view class="margin-top-space"></view>
+<view class="top">
+  <view class="top-info">
+    <image class="top-info-logo" src="../../picture/软件logo.jpg"></image>
+    <text class="text-register">企业移动办公管理程序</text>
+  </view>
+</view>
+<view class="middle">
+  <view class="middle-onemode">
+    <i-input class="input-style" value="{{username}}" title="用户名：" bind:change="setdata_username" placeholder="请输入用户名" />
+  </view>
+  <view class="middle-onemode">
+    <i-input class="input-style" value="{{userpassword}}" type='password' bind:change="setdata_userpassword" title="密码：" placeholder="请输入密码" />
+  </view>
+</view>
+<view class="margin_line"></view>
+<view class="footer">
+  <view class="margin_part"></view>
+  <button class="button-style" open-type="getUserInfo" bindtap="check_UserPassword" bindgetuserinfo="getUserInfo">登陆</button>
+  <button class="button-style" open-type="getUserInfo" bindtap="check_Whether_Register" bindgetuserinfo="getUserInfo_1">注册</button>
+  <view class="margin_part"></view>
+</view>
